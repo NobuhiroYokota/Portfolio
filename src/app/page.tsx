@@ -9,6 +9,7 @@ function Header () {
           <div>
             <a href='' className='text-4xl px-5'>Home</a>
             <a href='' className='text-4xl px-5'>About</a>
+            <a href='' className='text-4xl px-5'>Skills</a>
             <a href='' className='text-4xl px-5'>Projects</a>
           </div>
         </nav>
@@ -34,11 +35,13 @@ export default function Home() {
       <img
         src="/img/black_00077.jpg"
         alt="背景画像"
-        className="w-full h-[800px] object-cover"
+        className="w-full h-[700px] object-cover"
       />
       </div>
     </div>
     <About />
+    <Skills/>
+    <Projects/>
     </>
   );
 }
@@ -93,3 +96,96 @@ function About () {
     </>
   )
 }
+
+function Skills() {
+  return (
+    <>
+      <div className="text-center p-5 text-4xl bg-gray-500">Skills</div>
+      <div className="relative">
+        {/* 画像の上に文字を配置 */}
+        <img
+          src="/img/black_00077.jpg"
+          alt="背景画像"
+          className="w-full h-[450px] object-cover"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <div className="flex space-x-16 mt-10">
+            {/* 各アイコンとその名前を中央揃え */}
+            <div className="flex flex-col items-center">
+              <img
+                src="/img/HTML_logo.png"
+                alt="HTML_Logo"
+                className="w-[50px] h-[50px]"
+              />
+              <div className="text-white">HTML</div>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <img
+                src="/img/css_logo.png"
+                alt="CSS_Logo"
+                className="w-[50px] h-[50px]"
+              />
+              <div className="text-white">CSS</div>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <img
+                src="/img/javascript_logo.png"
+                alt="Javascript_Logo"
+                className="w-[50px] h-[50px]"
+              />
+              <div className="text-white">Javascript</div>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <img
+                src="/img/typescript_logo.png"
+                alt="Typescript_Logo"
+                className="w-[50px] h-[50px]"
+              />
+              <div className="text-white">Typescript</div>
+            </div>
+          </div>
+
+          <div className='flex space-x-16 mt-10'>
+            <div className="flex flex-col items-center">
+              <img
+                src="/img/React_logo.svg"
+                alt="React_Logo"
+                className="w-[50px] h-[50px]"
+              />
+              <div className="text-white">React</div>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <img
+                src="/img/GraphQL_logo.svg"
+                alt="GraphQL_Logo"
+                className="w-[50px] h-[50px]"
+              />
+              <div className="text-white">GraphQL</div>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <img
+                src="/img/Firebase_logo.png"
+                alt="Firebase_Logo"
+                className="w-[50px] h-[50px]"
+              />
+              <div className="text-white">Firebase</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function Projects () {
+  return (
+    <>
+    </>
+  )
+}
+
