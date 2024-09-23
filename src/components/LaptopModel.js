@@ -7,15 +7,15 @@ export default function LaptopModel() {
 
   return (
     <Canvas style={{ height: 900, width: 900 }}>
-        <PerspectiveCamera makeDefault position={[5, 3, 5]} /> 
+        <PerspectiveCamera makeDefault position={[5, 3, 5]} />
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
-        <OrbitControls 
-            autoRotate  
+        <OrbitControls
+            autoRotate
             autoRotateSpeed={2}
-            minDistance={50} 
-            maxDistance={100} 
-            target={[0, 0, 0]} 
+            minDistance={50}
+            maxDistance={50}
+            target={[0, 0, 0]}
         />
       <primitive object={scene} scale={0.8} />
     </Canvas>
