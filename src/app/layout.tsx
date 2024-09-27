@@ -1,8 +1,8 @@
 import { Noto_Serif_JP } from "next/font/google";
 
-export const NotoSerifJapanese = Noto_Serif_JP({
-  weight: "400",
-  subsets:["latin"],
+const notoSerifJapanese = Noto_Serif_JP({
+  weight: ["400"],
+  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={NotoSerifJapanese.className}>{children}</body> {/* Apply font globally */}
+      <body className={notoSerifJapanese.className}>{children}</body>
     </html>
   );
 }
