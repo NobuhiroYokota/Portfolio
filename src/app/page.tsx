@@ -182,10 +182,58 @@ function Skills() {
   );
 }
 
-function Projects () {
+function Projects() {
   return (
     <>
+      <div className="text-center p-5 text-4xl bg-gray-500">Projects</div>
+
+      <div className="relative w-full h-[450px]">
+        {/* 背景画像 */}
+        <img
+          src="/img/black_00077.jpg"
+          alt="背景画像"
+          className="w-full h-full object-cover"
+        />
+
+        {/* カードデザイン - 2つのカードを配置 */}
+        <div className="absolute inset-0 flex justify-center items-center space-x-8">
+          {/* カード1 */}
+          <div className="bg-[#1d1d1d] border border-gray-400 rounded-lg shadow-lg w-[300px] h-[400px] text-white flex flex-col">
+            {/* カード画像 */}
+            <img
+              src="/img/CreateBackground.png"
+              alt="CreateBackground"
+              className="w-[300px] h-[160px] rounded-t-lg object-cover"
+            />
+            {/* 文字部分 */}
+            <div className="p-5 flex-grow">
+              <div className="text-center text-2xl">CreateBackground</div>
+              <p className="mt-3 text-center">
+                ユーザに名前やXのidなど、任意の情報を入力させ、Zoomなどで利用できるバーチャル背景を作成するサービスです。
+              </p>
+            </div>
+          </div>
+
+          {/* カード2 */}
+          <div className="bg-[#1d1d1d] border border-gray-400 rounded-lg shadow-lg w-[300px] h-[400px] text-white flex flex-col">
+            {/* カード画像 */}
+            <img
+              src="/img/OnsenHub.png"
+              alt="OnsenHub"
+              className="w-[300px] h-[160px] rounded-t-lg object-cover"
+            />
+            {/* 文字部分 */}
+            <div className="p-5 flex-grow">
+              <div className="text-center text-2xl">-OnsenHub(開発中)-</div>
+              <p className="mt-3 text-center">
+                AIを用いることにより、どんな温泉に行きたいかを、対話形式で答えることにより、あなたに合った温泉を提供します
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
+
 
