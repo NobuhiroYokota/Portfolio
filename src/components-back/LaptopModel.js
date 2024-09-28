@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, PerspectiveCamera } from "@react-three/drei";
 
 export default function LaptopModel() {
-  const { scene } = useGLTF("models/laptop.glb");
+  const { scene } = useGLTF("/models/laptop.glb");
 
   return (
     <Canvas style={{ height: 900, width: 900 }}>
@@ -21,3 +21,5 @@ export default function LaptopModel() {
     </Canvas>
   );
 }
+
+useGLTF.preload("/models/laptop.glb");
