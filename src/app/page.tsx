@@ -1,5 +1,20 @@
 import './globals.css'
+import Image from 'next/image';
 import LaptopModel from '../components/LaptopModel';
+
+import BackgrouondImg from '../../public/img/black_00077.jpg'
+import User_icon from '../../public/img/User_icon.png'
+import X_logo from '../../public/img/X_logo.png'
+import Git_logo from '../../public/img/Git_logo.png'
+import HTML_logo from '../../public/img/HTML_logo.png'
+import CSS_logo from '../../public/img/CSS_logo.png'
+import Javascript_logo from '../../public/img/Javascript_logo.png'
+import Typescript_logo from '../../public/img/Typescript_logo.png'
+import React_logo from '../../public/img/React_logo.svg'
+import Firebase_logo from '../../public/img/Firebase_logo.png'
+import GraphQL_logo from '../../public/img/GraphQL_logo.svg'
+import CreateBackgroundImg from '../../public/img/CreateBackground.png'
+import OnsenHubImg from '../../public/img/OnsenHub.png'
 
 function Header () {
   return(
@@ -32,8 +47,8 @@ export default function Home() {
             <LaptopModel/>
           </div>
         </div>
-      <img
-        src="/img/black_00077.jpg"
+      <Image
+        src={BackgrouondImg}
         alt="背景画像"
         className="w-full h-[700px] object-cover"
       />
@@ -55,22 +70,22 @@ function About () {
         <div className='flex space-x-40'>
         {/* アイコン */}
           <div id="item1" className='text-center my-20'>
-            <img
-              src='/img/usericon.png'
+            <Image
+              src={User_icon}
               alt='Usericon'
               className='w-[170px] h-[170px] mb-5'
             />
             <div className='flex justify-center space-x-16 mt-2'>
               <a href='https://x.com/nobu_front'>
-                <img
-                  src='/img/logo-white.png'
+                <Image
+                  src={X_logo}
                   alt='Xicon'
                   className='w-[50px] h-[50px]'
                   />
               </a>
               <a href='https://github.com/NobuhiroYokota'>
-                <img
-                  src='/img/giticon.png'
+                <Image
+                  src={Git_logo}
                   alt='Giticon'
                   className='w-[50px] h-[50px]'
                   />
@@ -88,8 +103,8 @@ function About () {
       </div>
     </div>
 
-    <img
-      src="/img/black_00077.jpg"
+    <Image
+      src={BackgrouondImg}
       alt="背景画像"
       className="w-full h-[450px] object-cover"
     />
@@ -103,8 +118,8 @@ function Skills() {
       <div className="text-center p-5 text-4xl bg-gray-500">Skills</div>
       <div className="relative">
         {/* 画像の上に文字を配置 */}
-        <img
-          src="/img/black_00077.jpg"
+        <Image
+          src={BackgrouondImg}
           alt="背景画像"
           className="w-full h-[450px] object-cover"
         />
@@ -112,8 +127,8 @@ function Skills() {
           <div className="flex space-x-16 mt-10">
             {/* 各アイコンとその名前を中央揃え */}
             <div className="flex flex-col items-center">
-              <img
-                src="/img/HTML_logo.png"
+              <Image
+                src={HTML_logo}
                 alt="HTML_Logo"
                 className="w-[50px] h-[50px]"
               />
@@ -121,8 +136,8 @@ function Skills() {
             </div>
 
             <div className="flex flex-col items-center">
-              <img
-                src="/img/css_logo.png"
+              <Image
+                src={CSS_logo}
                 alt="CSS_Logo"
                 className="w-[50px] h-[50px]"
               />
@@ -130,8 +145,8 @@ function Skills() {
             </div>
 
             <div className="flex flex-col items-center">
-              <img
-                src="/img/javascript_logo.png"
+              <Image
+                src={Javascript_logo}
                 alt="Javascript_Logo"
                 className="w-[50px] h-[50px]"
               />
@@ -139,8 +154,8 @@ function Skills() {
             </div>
 
             <div className="flex flex-col items-center">
-              <img
-                src="/img/typescript_logo.png"
+              <Image
+                src={Typescript_logo}
                 alt="Typescript_Logo"
                 className="w-[50px] h-[50px]"
               />
@@ -150,8 +165,8 @@ function Skills() {
 
           <div className='flex space-x-16 mt-10'>
             <div className="flex flex-col items-center">
-              <img
-                src="/img/React_logo.svg"
+              <Image
+                src={React_logo}
                 alt="React_Logo"
                 className="w-[50px] h-[50px]"
               />
@@ -159,8 +174,8 @@ function Skills() {
             </div>
 
             <div className="flex flex-col items-center">
-              <img
-                src="/img/GraphQL_logo.svg"
+              <Image
+                src={GraphQL_logo}
                 alt="GraphQL_Logo"
                 className="w-[50px] h-[50px]"
               />
@@ -168,8 +183,8 @@ function Skills() {
             </div>
 
             <div className="flex flex-col items-center">
-              <img
-                src="/img/Firebase_logo.png"
+              <Image
+                src={Firebase_logo}
                 alt="Firebase_Logo"
                 className="w-[50px] h-[50px]"
               />
@@ -189,8 +204,8 @@ function Projects() {
 
       <div className="relative w-full h-[450px]">
         {/* 背景画像 */}
-        <img
-          src="/img/black_00077.jpg"
+        <Image
+          src={BackgrouondImg}
           alt="背景画像"
           className="w-full h-full object-cover"
         />
@@ -200,8 +215,8 @@ function Projects() {
           {/* カード1 */}
           <div className="bg-[#1d1d1d] border border-gray-400 rounded-lg shadow-lg w-[300px] h-[400px] text-white flex flex-col">
             {/* カード画像 */}
-            <img
-              src="/img/CreateBackground.png"
+            <Image
+              src={CreateBackgroundImg}
               alt="CreateBackground"
               className="w-[300px] h-[160px] rounded-t-lg object-cover"
             />
@@ -217,8 +232,8 @@ function Projects() {
           {/* カード2 */}
           <div className="bg-[#1d1d1d] border border-gray-400 rounded-lg shadow-lg w-[300px] h-[400px] text-white flex flex-col">
             {/* カード画像 */}
-            <img
-              src="/img/OnsenHub.png"
+            <Image
+              src={OnsenHubImg}
               alt="OnsenHub"
               className="w-[300px] h-[160px] rounded-t-lg object-cover"
             />
